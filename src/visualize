@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+
+
+def show_ndvi(ndvi):
+    plt.imshow(ndvi, cmap="RdYlGn")
+    plt.colorbar()
+    plt.title("NDVI Map")
+    plt.show()
+
+
+if __name__ == "__main__":
+    import numpy as np
+
+    ndvi = np.random.rand(100, 100)
+
+    show_ndvi(ndvi)
